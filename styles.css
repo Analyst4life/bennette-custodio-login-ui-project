@@ -1,0 +1,72 @@
+/* Reset */
+* {
+    margin: 0;                /* Remove default margin from all elements */
+    padding: 0;               /* Remove default padding from all elements */
+    box-sizing: border-box;   /* Include padding and border in element's total width/height */
+}
+
+/* Flexbox centering */
+body, html {
+    height: 100%;                     /* Ensure body and html fill the full viewport height */
+    display: flex;                    /* Use flexbox for easy centering */
+    justify-content: center;          /* Center content horizontally */
+    align-items: center;              /* Center content vertically */
+    background-color: #f0f2f5;       /* Light neutral background for the page */
+}
+
+/* Login box styling */
+.login-box {
+    background-color: #fff;                   /* White background for the login box */
+    border-radius: 12px;                      /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Soft shadow for depth */
+    padding: 40px;                            /* Inner spacing for content */
+    min-width: 300px;                         /* Minimum width */
+    max-width: 400px;                         /* Maximum width */
+    display: flex;                            /* Flex layout for child elements */
+    flex-direction: column;                   /* Stack children vertically */
+}
+
+/* Title */
+.login-box h2 {
+    text-align: center;    /* Center the heading text */
+    margin-bottom: 30px;   /* Space below the heading */
+    color: #333;           /* Dark gray text color */
+}
+
+/* Input group for line-style inputs */
+.input-group {
+    position: relative;    /* Allows positioning of child elements if needed */
+    margin-bottom: 25px;   /* Space below each input group */
+}
+
+/* Inputs without borders */
+.input-group input {
+    width: 100%;                 /* Make input take full width of container */
+    padding: 8px 0;              /* Vertical padding, no horizontal padding */
+    border: none;                /* Remove default input border */
+    border-bottom: 1px solid #ccc; /* Add subtle line at bottom */
+    font-size: 16px;             /* Slightly larger, readable font */
+    outline: none;               /* Remove focus outline */
+}
+
+/* Hover/focus effect for line */
+.input-group input:focus {
+    border-bottom: 2px solid #007bff; /* Highlight bottom border when focused */
+}
+
+/* Oval/Pill-shaped button */
+.login-box button {
+    padding: 12px 0;           /* Vertical padding for button height */
+    width: 100%;               /* Full width for a strong visual presence */
+    background-color: #007bff; /* Primary blue color */
+    color: #fff;               /* White text */
+    border: none;              /* Remove default border */
+    border-radius: 50px;       /* Pill-shaped corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    font-size: 16px;           /* Readable font size */
+    margin-top: 10px;          /* Space above button */
+}
+
+.login-box button:hover {
+    background-color: #0056b3; /* Darker blue on hover for feedback */
+}
